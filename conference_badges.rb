@@ -13,20 +13,20 @@ def my_name_is(*name)
 end
 
 def room(speakers)
-  @speakers.each do |x|
-    @room_assign << "Hello #{x}! You'll be assigned to room #{@rooms}!"
-    @rooms += 1
+  speakers.each do |x|
+    room_assign << "Hello #{x}! You'll be assigned to room #{rooms}!"
+    rooms += 1
   end
 end
 
 def print
-  puts @nametag
-  puts @room_assign
+  puts nametag
+  puts room_assign
 end
 
 def run_program
   my_name_is("Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz")
-  room(@speakers)
+  room(speakers)
   print
 end
 
